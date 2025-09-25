@@ -132,12 +132,55 @@ body{
 }
 
 /* Projects */
-
+/* 
 .projectSection{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+} */
+
+.projectSection {
+    padding: 16px; 
+    text-align: center;
+}
+
+.projectSection h2{
+    margin: 0 0 12px;
+}
+
+.projectsBox{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.projectsBox article{
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 10px 3px 0px rgba(0,0,0,1);
+    padding: 16px 18px 22px;
+}
+
+.projectsBox h3{
+    margin: 6px 0 4px;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+}
+
+.projectsBox p {
+    margin: 0;
+    max-width: 42ch;
+    margin-inline: auto;
+}
+
+@media (min-width: 720px){
+    .projectsBox{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* Skill Section */
@@ -147,4 +190,26 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 72px;
+}
+
+.skillSection h4{
+    margin: 8px 0 4px;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 6px 0 0;
+    gap: 6px;
+    list-style: none;
+}
+
+.skills li{
+    padding: 4px 8px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
 }
