@@ -10,7 +10,8 @@ body{
     position: sticky;
     top: 0px;
     background-color: hsl(75, 11%, 93%);
-    width: 100%;
+    /* max-width: 100%; */
+    flex-wrap: wrap;
 }
 
 .navbar ul{
@@ -24,7 +25,7 @@ body{
 }
 
 .navbar a{
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
 }
@@ -38,18 +39,112 @@ body{
 .aboutSection{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
     text-align: center;
-    padding: 20px 200px 0 200px;
+    padding: 16px;
+    max-width: 880px;
+    margin: 0 auto;
+    gap: .5em;
 }
 
 .aboutSection img{
-    /* height: 300px; */
-    height: 100%;
-    width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto 12px;
+    width: 40vw;
+    max-width: 160px;
+    min-width: 100px;
+    width: 40vw;
     border-radius: 150px;
 }
 
 .aboutSection p{
-    padding: 0 200px 0 200px;
+    margin: 0 50px 0 50px;
+}
+
+/* Education  */
+.educationSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.educationSection h2{
+    margin-block: 0 8px;
+}
+
+.educationSection ul{
+    list-style-type: none;
+    margin: 0px;
+    font-style: italic;
+}
+
+/* Work  */
+
+.workSection{
+    padding: 16px;
+    text-align: center;
+}
+
+.workSection h2{
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+.workInfo{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.workLearn{
+    margin: 8px 0 0 0;
+    padding-left: 12px;
+    list-style: disc;
+}
+
+.workLearn li{
+    margin: 6px 0;
+}
+
+.workSkills{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 12px 0 0;
+    gap: 8px;
+    list-style: none;
+}
+
+.workSkills li{
+    padding: 6px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12px;
+}
+
+/* Projects */
+
+.projectSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Skill Section */
+
+.skillSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
