@@ -10,7 +10,6 @@ body{
     position: sticky;
     top: 0px;
     background-color: hsl(75, 11%, 93%);
-    /* max-width: 100%; */
     flex-wrap: wrap;
 }
 
@@ -39,7 +38,6 @@ body{
 .aboutSection{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
     padding: 16px;
