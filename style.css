@@ -164,7 +164,7 @@ body{
 
 .projectsBox p {
     margin: 0;
-    max-width: 42ch;
+    max-width: 640px;
     margin-inline: auto;
 }
 
